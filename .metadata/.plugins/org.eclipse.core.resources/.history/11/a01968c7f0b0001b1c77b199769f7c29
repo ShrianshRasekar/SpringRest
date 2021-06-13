@@ -1,0 +1,26 @@
+package com.example.springrest.services;
+
+import java.util.*;
+
+import com.example.springrest.entities.Course;
+
+public class CourseServiceImpl implements CourseService {
+
+	List<Course> list;
+	
+	public CourseServiceImpl() {
+		list=new ArrayList<>();
+		list.add(new Course(1,"core java","basics of java"));
+		list.add(new Course(2,"Adv java","J2EE of java"));
+		
+	}
+	
+	@Override
+	public List<Course> getCourses() {
+		// TODO Auto-generated method stub
+		return list;
+	}
+
+	
+	
+}

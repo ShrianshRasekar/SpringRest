@@ -1,0 +1,5 @@
+package com.example.springrest.services;
+
+public class CourseServiceImpl implements CourseService {
+
+}
